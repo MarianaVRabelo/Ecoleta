@@ -112,3 +112,46 @@
     text-align: center;
 }
 
+#page-home footer {
+    background-color: var(--title-color);
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home footer h1 {
+    color: white;
+}
+
+#page-home footer .nome {
+    color: white;
+}
+
+#page-home footer .email {
+    color: white;
+}
+
+#page-home footer .mensagem {
+    color: white;
+}
+
+#page-home footer button {
+    background-color: var(--primary-color);
+
+    color: white;
+
+    border-radius: 8px;
+
+    width:104px;
+    height:36px;
+
+    border-style: none;
+
+    transition: 400ms;
+}
+
+#page-home footer button:hover {
+    background-color: #2fb86e;
+}

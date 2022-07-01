@@ -35,11 +35,16 @@
                             <br/>
                             {{ place.address2 }}
                         </p>
+
                     </div>
+                    
                    {% endfor %}
 
+                   
                 </div>
 
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <div id="piechart" style="width: 900px; height: 500px;"></div>
 
                 {% else %}
 
@@ -50,3 +55,7 @@
             
             </main>
     {% endblock content %}
+
+    {% block scripts %}
+    <script src="/scripts/grafic.js"></script>
+    {% endblock scripts %}

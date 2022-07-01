@@ -19,9 +19,6 @@ server.get("/", (req, res) => {
 
 server.get("/create-point", (req, res) => {
 
-   
-
-
    return res.render("create-point.html")
 })
 
@@ -87,5 +84,8 @@ server.get("/search", (req, res) => {
    })
   
 })
+
+
+
 
 server.listen(3000)

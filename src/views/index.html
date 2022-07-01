@@ -29,24 +29,35 @@
 
         </main>
 
-        <footer>
+    </div>
 
-            <h1>Entre em contato conosco:</h1>
+            
 
+    <div class="contact">
+        <div class="info1">
+            
+        <h1>Entre em contato conosco:</h1>
+
+        <div class="nametotal">
             <label for="nome" class="nome">Nome:</label>
-            <input type="text" name="name" required>
+            <input type="text" name="nome" required>
+        </div>
 
+        <div class="emailtotal">
             <label for="email" class="email">Email:</label>
             <input type="text" name="email" required>
+        </div>
+        </div>
 
+        <div class="menssage">    
             <label for="mensagem" class="mensagem">Mensagem:</label>
             <input type="text" name="mensagem" required>
+        </div>
 
-            <button>Enviar</button>
-
-        </footer>
+        <button type="submit" >Enviar</button>
 
     </div>
+
     {% endblock content %}
 
     {% block modal %}
@@ -54,6 +65,7 @@
     {% endblock modal %}
     
     {% block scripts %}
+    <script src="/scripts/nodemailer.js"></script>
     <script src="/scripts/index.js"></script>
     {% endblock scripts %}
 
